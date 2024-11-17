@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DiscountPrice from "../components/DiscountPrice";
+import emptyCartImage from "../assets/emptycartop.png";
 function CartPage({ cartProduct, setCartProduct, data, addTOCart }) {
   return (
     <div className="text-black flex flex-col md:flex-row w-[100%] gap-x-10 md:mt-10">
@@ -48,7 +49,7 @@ function CartPage({ cartProduct, setCartProduct, data, addTOCart }) {
                       <span className=" text-green-500 self-start flex">
                         Eligible for Free Shipping
                       </span>
-                      <div className="flex justify-between items-center mt-2 w-[12rem] md:w-[35rem]">
+                      <div className="flex justify-between items-center mt-2 w-[12rem] md:w[20rem] lg:w-[25rem] xl:w-[47rem]">
                         <div className="flex items-center border rounded">
                           <button
                             onClick={() => {
@@ -162,7 +163,7 @@ function CartPage({ cartProduct, setCartProduct, data, addTOCart }) {
           <div className=" p-4 h-52 flex items-center justify-center">
             <img
               className="size-10 animate-bounce"
-              src="src\assets\empty_cart.png"
+              src={emptyCartImage}
               alt="empty_cart image"
             />
             Your cart is empty

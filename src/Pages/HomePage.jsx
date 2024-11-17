@@ -2,7 +2,7 @@ import React from "react";
 import ProductCard from "../components/ProductCard";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import banner from "../assets/banner.png";
 function HomePage({ addTOCart, products }) {
   const [indexProduct, setIndexProduct] = useState([17, 16, 15, 18]);
   const [featuredProducts, setFeaturedProducts] = useState([]);
@@ -18,8 +18,8 @@ function HomePage({ addTOCart, products }) {
   }
   return (
     <div>
-      <section className="relative ">
-        <img src="\src\assets\shopping-banner.jpeg" alt="banner" />
+      <section>
+        <img src={banner} alt="banner" />
       </section>
       {/* featured products */}
       <section>
