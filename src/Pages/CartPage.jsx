@@ -48,7 +48,7 @@ function CartPage({ cartProduct, setCartProduct, data, addTOCart }) {
                       <span className=" text-green-500 self-start flex">
                         Eligible for Free Shipping
                       </span>
-                      <div className="flex justify-between items-center mt-2 w-[12rem] md:w-[37rem]">
+                      <div className="flex justify-between items-center mt-2 w-[12rem] md:w-[35rem]">
                         <div className="flex items-center border rounded">
                           <button
                             onClick={() => {
