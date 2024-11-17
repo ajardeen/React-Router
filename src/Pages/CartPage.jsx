@@ -188,7 +188,8 @@ function CartPage({ cartProduct, setCartProduct, data, addTOCart }) {
                 alert("your cart is empty");
                 return;
               }
-              setCartProduct([]);
+              //under development feature
+              // setCartProduct([]);
               alert("Order placed successfully Thank you for shopping with us");
             }}
             className="w-full bg-blue-500 text-white rounded-lg py-2 font-semibold hover:bg-blue-600 transition duration-300"
