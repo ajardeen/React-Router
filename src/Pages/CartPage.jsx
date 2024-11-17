@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DiscountPrice from "../components/DiscountPrice";
-function CartPage({ cartProduct, setCartProduct, data,addTOCart }) {
-
+function CartPage({ cartProduct, setCartProduct, data, addTOCart }) {
   return (
     <div className="text-black flex flex-col md:flex-row w-[100%] gap-x-10 md:mt-10">
       {/* left side container */}
@@ -49,8 +48,8 @@ function CartPage({ cartProduct, setCartProduct, data,addTOCart }) {
                       <span className=" text-green-500 self-start flex">
                         Eligible for Free Shipping
                       </span>
-                      <div className="flex justify-between items-center mt-2 w-[12rem] md:w-[50rem]">
-                        <div className="flex items-center border rounded"> 
+                      <div className="flex justify-between items-center mt-2 w-[12rem] md:w-[37rem]">
+                        <div className="flex items-center border rounded">
                           <button
                             onClick={() => {
                               setCartProduct(
